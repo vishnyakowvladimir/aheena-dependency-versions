@@ -1,5 +1,5 @@
 ext {
-    kotlin_version =  '1.9.0'
+    minSdk1 =  24
     compiler = [
             java          : JavaVersion.VERSION_1_8,
             kotlin_version: '1.9.0'
