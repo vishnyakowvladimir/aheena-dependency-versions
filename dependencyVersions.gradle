@@ -2,7 +2,7 @@ ext {
     androidMinSdkVersion = 24
     androidTargetSdkVersion = 34
     androidCompileSdkVersion = 34
-    androidApplicationId = "ru.gazprombank.mobile.bank4"
+    androidApplicationId = "ru.gazprombank.mobile.bank5"
     coreLibraryDesugaringVersion = "1.1.5"
 
     gradleWrapperVersion = '8.3.0'
