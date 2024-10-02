@@ -1,12 +1,3 @@
 ext {
-    minSdk1 =  24
-    compiler = [
-            java          : JavaVersion.VERSION_1_8,
-            kotlin_version: '1.9.0'
-    ]
-
-    android = [
-            minSdk   : 24,
-            targetSdk: 33,
-    ]
+    minSdk =  24
 }
