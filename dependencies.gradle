@@ -1,0 +1,61 @@
+apply from: 'aheena-dependency-versions/dependencyVersions.gradle'
+
+ext {
+    anndroidXCore = [
+            "androidx.core:core-ktx:$androidXCoreKtxVersion",
+    ]
+
+    anndroidXLifecycle = [
+            "androidx.lifecycle:lifecycle-runtime-ktx:$androidXLifecycleRuntimeKtxVersion",
+    ]
+
+    anndroidXActivity = [
+            "androidx.activity:activity-compose:$androidXActivityComposeVersion",
+    ]
+
+    anndroidXComposeUi = [
+            "androidx.compose.ui:ui",
+            "androidx.compose.ui:ui-graphics",
+            "androidx.compose.ui:ui-tooling-preview",
+    ]
+
+    anndroidXComposeUiWithVersions = [
+            "androidx.compose.ui:ui-graphics-android:$androidXComposeAndroidVersion",
+            "androidx.compose.ui:ui-android:$androidXComposeAndroidVersion",
+            "androidx.compose.ui:ui-tooling-preview-android:$androidXComposeAndroidVersion",
+    ]
+
+    anndroidXComposeRuntime = [
+            "androidx.compose.runtime:runtime-android:$androidXComposeAndroidVersion",
+    ]
+
+    anndroidXComposeFoundation = [
+            "androidx.compose.foundation:foundation-android:$androidXComposeAndroidVersion",
+    ]
+
+    anndroidXComposeMaterial3 = [
+            "androidx.compose.material3:material3",
+    ]
+
+    anndroidXComposeMaterial3WithVersion = [
+            "androidx.compose.material3:material3-android:$androidXMaterial3Version",
+    ]
+
+    anndroidXComposePlatform = "androidx.compose:compose-bom:$androidXComposeBomVersion"
+
+    anndroidXAppCompat = [
+            "androidx.appcompat:appcompat:$androidXAppCompatVersion",
+    ]
+
+    anndroidXNavigation = [
+            "androidx.navigation:navigation-compose:$androidXNavigationComposeVersion",
+    ]
+
+    androidMaterial = [
+            "com.google.android.material:material:$androidMaterialVersion",
+    ]
+
+    coil = [
+            "io.coil-kt:coil-compose:$coilVersion",
+    ]
+}
