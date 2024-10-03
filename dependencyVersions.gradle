@@ -7,4 +7,11 @@ ext {
     targetSdk = 34
     jvmTarget = "1.8"
     kotlinCompilerExtensionVersion = "1.5.1"
+
+    androidXCoreKtxVersion = "1.13.1"
+    androidXLifecycleRuntimeKtxVersion = "2.8.6"
+    androidXActivityComposeVersion = "1.9.2"
+    androidXAppCompatVersion = "1.7.0"
+    androidXNavigationComposeVersion = "2.8.1"
+    androidXComposeBomVersion = "2024.09.02"
 }
