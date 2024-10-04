@@ -1,0 +1,70 @@
+apply from: appRootPath("aheena-dependency-versions/dependencyVersions.gradle")
+apply from: appRootPath("aheena-dependency-versions/dependencies.gradle")
+
+ext {
+    applyAndroidConfiguration = { module, nameSpace ->
+
+        module.configure(module) {
+            def ext = rootProject.extensions.ext
+
+            apply plugin: 'com.android.library'
+            apply plugin: 'org.jetbrains.kotlin.android'
+
+            android {
+                compileSdk = ext.compileSdk
+
+                namespace = nameSpace
+
+                defaultConfig {
+                    minSdk = ext.minSdk
+                    testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+                }
+
+                buildTypes {
+                    release {
+                        minifyEnabled = false
+                        proguardFiles(
+                                getDefaultProguardFile("proguard-android-optimize.txt"),
+                                "proguard-rules.pro"
+                        )
+                    }
+                }
+                compileOptions {
+                    sourceCompatibility = ext.javaVersion
+                    targetCompatibility = ext.javaVersion
+                }
+                kotlinOptions {
+                    jvmTarget = ext.jvmTarget
+                }
+            }
+        }
+
+        module.dependencies {
+            implementation anndroidXCore
+        }
+    }
+
+    applyCompose = { module ->
+        def ext = rootProject.extensions.ext
+
+        module.configure(module) {
+
+            android {
+                buildFeatures {
+                    compose true
+                }
+
+                composeOptions {
+                    kotlinCompilerExtensionVersion = ext.kotlinCompilerExtensionVersion
+                }
+            }
+        }
+
+        module.dependencies {
+            implementation anndroidXComposeRuntime
+            implementation anndroidXComposeUiWithVersions
+            implementation anndroidXComposeFoundation
+            implementation anndroidXComposeMaterial3WithVersion
+        }
+    }
+}
