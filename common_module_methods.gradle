@@ -5,18 +5,16 @@ ext {
     applyAndroidConfiguration = { module, nameSpace ->
 
         module.configure(module) {
-            def ext = rootProject.extensions.ext
-
             apply plugin: 'com.android.library'
             apply plugin: 'org.jetbrains.kotlin.android'
 
             android {
-                compileSdk = ext.compileSdk
+                compileSdk = compileSdkExt
 
                 namespace = nameSpace
 
                 defaultConfig {
-                    minSdk = ext.minSdk
+                    minSdk = minSdkExt
                     testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
                 }
 
@@ -30,11 +28,11 @@ ext {
                     }
                 }
                 compileOptions {
-                    sourceCompatibility = ext.javaVersion
-                    targetCompatibility = ext.javaVersion
+                    sourceCompatibility = javaVersionExt
+                    targetCompatibility = javaVersionExt
                 }
                 kotlinOptions {
-                    jvmTarget = ext.jvmTarget
+                    jvmTarget = jvmTargetExt
                 }
             }
         }
@@ -45,8 +43,6 @@ ext {
     }
 
     applyCompose = { module ->
-        def ext = rootProject.extensions.ext
-
         module.configure(module) {
 
             android {
@@ -55,7 +51,7 @@ ext {
                 }
 
                 composeOptions {
-                    kotlinCompilerExtensionVersion = ext.kotlinCompilerExtensionVersion
+                    kotlinCompilerExtensionVersion = kotlinCompilerExtensionVersionExt
                 }
             }
         }

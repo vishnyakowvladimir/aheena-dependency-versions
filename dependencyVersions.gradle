@@ -1,12 +1,12 @@
 ext {
-    androidApplicationVersion = "8.3.2"
-    kotlinVersion = "1.9.0"
-    javaVersion = JavaVersion.VERSION_1_8
-    minSdk = 24
-    compileSdk = 34
-    targetSdk = 34
-    jvmTarget = "1.8"
-    kotlinCompilerExtensionVersion = "1.5.1"
+    androidApplicationVersionExt = "8.3.2"
+    kotlinVersionExt = "1.9.0"
+    javaVersionExt = JavaVersion.VERSION_1_8
+    minSdkExt = 24
+    compileSdkExt = 34
+    targetSdkExt = 34
+    jvmTargetExt = "1.8"
+    kotlinCompilerExtensionVersionExt = "1.5.1"
 
     androidXCoreKtxVersion = "1.13.1"
     androidXLifecycleRuntimeKtxVersion = "2.8.6"
