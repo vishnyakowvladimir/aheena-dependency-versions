@@ -1,6 +1,3 @@
-apply from: appRootPath("aheena-dependency-versions/dependencyVersions.gradle")
-apply from: appRootPath("aheena-dependency-versions/dependencies.gradle")
-
 ext {
     applyAndroidConfiguration = { module, nameSpace ->
 
@@ -9,9 +6,8 @@ ext {
             apply plugin: 'org.jetbrains.kotlin.android'
 
             android {
-                compileSdk = compileSdkExt
-
                 namespace = nameSpace
+                compileSdk = compileSdkExt
 
                 defaultConfig {
                     minSdk = minSdkExt
