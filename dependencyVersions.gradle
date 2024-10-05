@@ -1,5 +1,5 @@
 ext {
-    gradleVersionExt = "8.3.2"
+    agpVersionExt = "8.3.2"
     kotlinVersionExt = "1.9.0"
     javaVersionExt = JavaVersion.VERSION_1_8
     minSdkExt = 24
