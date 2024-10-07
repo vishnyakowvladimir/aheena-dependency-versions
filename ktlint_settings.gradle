@@ -1,0 +1,51 @@
+ext {
+    applyKtlint = { module ->
+
+        module.configure(module) {
+            apply plugin: 'java'
+
+            module.java {
+                sourceCompatibility = javaVersionExt
+                targetCompatibility = javaVersionExt
+            }
+
+            module.configurations {
+                ktlint
+            }
+
+            module.dependencies {
+                ktlint("com.pinterest.ktlint:ktlint-cli:$ktlintPinterestVersion") {
+                    attributes {
+                        attribute(Bundling.BUNDLING_ATTRIBUTE, getObjects().named(Bundling, Bundling.EXTERNAL))
+                    }
+                }
+            }
+
+            module.tasks.register("ktlintFormat", JavaExec) {
+                group = "formatting"
+                description = "Fix Kotlin code style deviations."
+                classpath = configurations.ktlint
+                mainClass = "com.pinterest.ktlint.Main"
+                ignoreExitValue = true
+                jvmArgs("--add-opens=java.base/java.lang=ALL-UNNAMED")
+                jvmArgs("--add-opens=java.base/java.util=ALL-UNNAMED")
+                jvmArgs("--add-opens", "java.base/java.lang=ALL-UNNAMED")
+                jvmArgs("--add-opens", "java.base/java.util=ALL-UNNAMED")
+
+                args "-F", "$rootProject.projectDir/**/src/**/*.kt"
+
+            }
+
+            module.tasks.register("ktlintCheckstyle", JavaExec) {
+                group = "verification"
+                description = "Check Kotlin code style."
+                classpath = configurations.ktlint
+                mainClass = "com.pinterest.ktlint.Main"
+                ignoreExitValue = true
+                args "--reporter=plain"
+                args "--reporter=checkstyle,output=${project.buildDir}/reports/checkstyle/ktlint.xml"
+                args "$rootProject.projectDir/**/src/**/*.kt"
+            }
+        }
+    }
+}
