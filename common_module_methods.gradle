@@ -31,10 +31,12 @@ ext {
                         )
                     }
                 }
+
                 compileOptions {
                     sourceCompatibility = javaVersionExt
                     targetCompatibility = javaVersionExt
                 }
+
                 kotlinOptions {
                     jvmTarget = jvmTargetExt
                 }
