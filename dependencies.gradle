@@ -56,4 +56,8 @@ ext {
     coil = [
             "io.coil-kt:coil-compose:$coilVersion",
     ]
+
+    kotlinX = [
+            "org.jetbrains.kotlinx:kotlinx-collections-immutable:$kotlinCollectionImmutableVersion",
+    ]
 }
