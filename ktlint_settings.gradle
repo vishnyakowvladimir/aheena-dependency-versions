@@ -4,16 +4,16 @@ ext {
         module.configure(module) {
             apply plugin: 'java'
 
-            module.java {
+            java {
                 sourceCompatibility = javaVersionExt
                 targetCompatibility = javaVersionExt
             }
 
-            module.configurations {
+            configurations {
                 ktlint
             }
 
-            module.dependencies {
+            dependencies {
                 ktlint("com.pinterest.ktlint:ktlint-cli:$ktlintPinterestVersion") {
                     attributes {
                         attribute(Bundling.BUNDLING_ATTRIBUTE, getObjects().named(Bundling, Bundling.EXTERNAL))
@@ -21,7 +21,7 @@ ext {
                 }
             }
 
-            module.tasks.register("ktlintFormat", JavaExec) {
+            tasks.register("ktlintFormat", JavaExec) {
                 group = "formatting"
                 description = "Fix Kotlin code style deviations."
                 classpath = configurations.ktlint
@@ -36,7 +36,7 @@ ext {
 
             }
 
-            module.tasks.register("ktlintCheckstyle", JavaExec) {
+            tasks.register("ktlintCheckstyle", JavaExec) {
                 group = "verification"
                 description = "Check Kotlin code style."
                 classpath = configurations.ktlint
