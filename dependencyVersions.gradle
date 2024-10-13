@@ -23,5 +23,5 @@ ext {
     coilVersion = "2.7.0"
     kotlinCollectionImmutableVersion = "0.3.7"
 
-    testVersion = "testVersion"
+    testVersion = "testVersion 2"
 }
