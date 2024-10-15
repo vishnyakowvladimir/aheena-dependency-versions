@@ -17,6 +17,7 @@ ext {
     androidXNavigationComposeVersion = "2.8.2"
     androidXComposeBomVersion = "2024.09.03"
     androidXComposeAndroidVersion = "1.7.3"
+    anndroidXComposeNavigationVersion = "1.7.0-beta01"
     androidMaterialVersion = "1.12.0"
     androidXMaterial3Version = "1.3.0"
 
