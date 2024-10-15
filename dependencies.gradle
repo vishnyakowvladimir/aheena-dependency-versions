@@ -71,4 +71,22 @@ ext {
             "com.google.dagger:dagger-compiler:$daggerVersion",
             "com.google.dagger:dagger-android-processor:$daggerVersion",
     ]
+
+    multidex = [
+            "com.android.support:multidex:$multidexVerstion"
+    ]
+
+    lifecycle = [
+            "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycleVersion",
+            "androidx.lifecycle:lifecycle-viewmodel-savedstate:$lifecycleVersion",
+            "androidx.lifecycle:lifecycle-extensions:$lifecycleExtensionVersion",
+            "androidx.lifecycle:lifecycle-common-java8:$lifecycleVersion",
+            "androidx.lifecycle:lifecycle-runtime-ktx:$lifecycleVersion",
+            "androidx.lifecycle:lifecycle-reactivestreams-ktx:$lifecycleVersion",
+            "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycleVersion",
+            "androidx.lifecycle:lifecycle-process:$lifecycleVersion",
+            "androidx.lifecycle:lifecycle-service:$lifecycleVersion",
+            "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycleVersion",
+            "androidx.lifecycle:lifecycle-reactivestreams-ktx:$lifecycleVersion",
+    ]
 }

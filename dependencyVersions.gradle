@@ -22,6 +22,8 @@ ext {
 
     coilVersion = "2.7.0"
     kotlinCollectionImmutableVersion = "0.3.7"
-
     daggerVersion = "2.47"
+    multidexVerstion = "1.0.3"
+    lifecycleVersion = "2.8.6"
+    lifecycleExtensionVersion = "2.2.0"
 }
