@@ -45,7 +45,14 @@ ext {
         }
 
         module.dependencies {
-            implementation anndroidXCore
+            implementation multidex
+        }
+    }
+
+    applyDagger = { module ->
+        module.dependencies {
+            implementation dagger
+            kapt daggerKapt
         }
     }
 
