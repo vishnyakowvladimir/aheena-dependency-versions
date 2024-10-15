@@ -60,4 +60,15 @@ ext {
     kotlinX = [
             "org.jetbrains.kotlinx:kotlinx-collections-immutable:$kotlinCollectionImmutableVersion",
     ]
+
+    dagger = [
+            "com.google.dagger:dagger:$daggerVersion",
+            "com.google.dagger:dagger-android:$daggerVersion",
+            "com.google.dagger:dagger-android-support:$daggerVersion",
+    ]
+
+    daggerKapt = [
+            "com.google.dagger:dagger-compiler:$daggerVersion",
+            "com.google.dagger:dagger-android-processor:$daggerVersion",
+    ]
 }

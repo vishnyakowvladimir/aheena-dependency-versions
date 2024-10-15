@@ -22,4 +22,6 @@ ext {
 
     coilVersion = "2.7.0"
     kotlinCollectionImmutableVersion = "0.3.7"
+
+    daggerVersion = "2.47"
 }
