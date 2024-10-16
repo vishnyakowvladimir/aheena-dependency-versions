@@ -3,8 +3,8 @@ ext {
     kotlinVersionExt = "1.9.0"
     javaVersionExt = JavaVersion.VERSION_1_8
     minSdkExt = 24
-    compileSdkExt = 34
-    targetSdkExt = 34
+    compileSdkExt = 35
+    targetSdkExt = 35
     jvmTargetExt = "1.8"
     kotlinCompilerExtensionVersionExt = "1.5.1"
 
@@ -12,16 +12,17 @@ ext {
 
     androidXCoreKtxVersion = "1.13.1"
     androidXLifecycleRuntimeKtxVersion = "2.8.6"
-    androidXActivityComposeVersion = "1.9.2"
+    androidMaterialVersion = "1.12.0"
+    androidXMaterial3Version = "1.3.0"
     androidXAppCompatVersion = "1.7.0"
-//    androidXNavigationComposeVersion = "2.8.2"
+
+    androidXActivityComposeVersion = "1.9.2"
+    androidXNavigationComposeVersion = "2.8.2"
     androidXComposeBomVersion = "2024.09.03"
     androidXComposeAndroidVersion = "1.7.3"
     anndroidXComposeNavigationVersion = "1.7.0-beta01"
-    androidMaterialVersion = "1.12.0"
-    androidXMaterial3Version = "1.3.0"
-
     coilVersion = "2.7.0"
+
     kotlinCollectionImmutableVersion = "0.3.7"
     daggerVersion = "2.47"
     multidexVerstion = "1.0.3"
