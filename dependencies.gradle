@@ -52,6 +52,7 @@ ext {
 
     kotlinX = [
             "org.jetbrains.kotlinx:kotlinx-collections-immutable:$kotlinCollectionImmutableVersion",
+            "org.jetbrains.kotlinx:kotlinx-serialization-json:$kotlinXSerializationJsonVersion",
     ]
 
     androidXAppCompat = [
