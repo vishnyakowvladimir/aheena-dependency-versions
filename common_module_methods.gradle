@@ -58,6 +58,7 @@ ext {
 
     applyCompose = { module, kotlinCompile ->
         module.configure(module) {
+            apply plugin: 'org.jetbrains.kotlin.plugin.serialization'
 
             android {
                 buildFeatures {
