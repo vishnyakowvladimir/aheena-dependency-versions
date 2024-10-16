@@ -1,48 +1,48 @@
 ext {
-    anndroidXCore = [
+    androidXCore = [
             "androidx.core:core-ktx:$androidXCoreKtxVersion",
     ]
 
-    anndroidXLifecycle = [
+    androidXLifecycle = [
             "androidx.lifecycle:lifecycle-runtime-ktx:$androidXLifecycleRuntimeKtxVersion",
     ]
 
-    anndroidXActivity = [
+    androidXActivity = [
             "androidx.activity:activity-compose:$androidXActivityComposeVersion",
     ]
 
-    anndroidXComposeUi = [
+    androidXComposeUi = [
             "androidx.compose.ui:ui",
             "androidx.compose.ui:ui-graphics",
             "androidx.compose.ui:ui-tooling-preview",
     ]
 
-    anndroidXComposeUiWithVersions = [
+    androidXComposeUiWithVersions = [
             "androidx.compose.ui:ui-graphics-android:$androidXComposeAndroidVersion",
             "androidx.compose.ui:ui-android:$androidXComposeAndroidVersion",
             "androidx.compose.ui:ui-tooling-preview-android:$androidXComposeAndroidVersion",
     ]
 
-    anndroidXComposeRuntime = [
+    androidXComposeRuntime = [
             "androidx.compose.runtime:runtime-android:$androidXComposeAndroidVersion",
     ]
 
-    anndroidXComposeFoundation = [
+    androidXComposeFoundation = [
             "androidx.compose.foundation:foundation-android:$androidXComposeAndroidVersion",
     ]
 
-    anndroidXComposeMaterial3 = [
+    androidXComposeMaterial3 = [
             "androidx.compose.material3:material3",
     ]
 
-    anndroidXComposeMaterial3WithVersion = [
+    androidXComposeMaterial3WithVersion = [
             "androidx.compose.material3:material3-android:$androidXMaterial3Version",
             "androidx.compose.material3:material3:$androidXMaterial3Version",
     ]
 
-    anndroidXComposePlatform = "androidx.compose:compose-bom:$androidXComposeBomVersion"
+    androidXComposePlatform = "androidx.compose:compose-bom:$androidXComposeBomVersion"
 
-    anndroidXNavigation = [
+    androidXNavigation = [
             "androidx.navigation:navigation-compose:$androidXNavigationComposeVersion",
     ]
 
@@ -54,7 +54,7 @@ ext {
             "org.jetbrains.kotlinx:kotlinx-collections-immutable:$kotlinCollectionImmutableVersion",
     ]
 
-    anndroidXAppCompat = [
+    androidXAppCompat = [
             "androidx.appcompat:appcompat:$androidXAppCompatVersion",
     ]
 

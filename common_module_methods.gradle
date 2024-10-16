@@ -86,12 +86,12 @@ ext {
         }
 
         module.dependencies {
-            implementation anndroidXComposeRuntime
-            implementation anndroidXComposeUiWithVersions
-            implementation anndroidXComposeFoundation
-            implementation anndroidXComposeMaterial3WithVersion
-            implementation(platform(anndroidXComposePlatform))
-            implementation(anndroidXNavigation)
+            implementation androidXComposeRuntime
+            implementation androidXComposeUiWithVersions
+            implementation androidXComposeFoundation
+            implementation androidXComposeMaterial3WithVersion
+            implementation(platform(androidXComposePlatform))
+            implementation(androidXNavigation)
             implementation(coil)
             implementation(kotlinX)
         }
