@@ -90,7 +90,10 @@ ext {
             implementation anndroidXComposeUiWithVersions
             implementation anndroidXComposeFoundation
             implementation anndroidXComposeMaterial3WithVersion
-//            implementation anndroidXComposeNavigation
+            implementation(platform(anndroidXComposePlatform))
+            implementation(anndroidXNavigation)
+            implementation(coil)
+            implementation(kotlinX)
         }
     }
 }

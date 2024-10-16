@@ -37,20 +37,13 @@ ext {
 
     anndroidXComposeMaterial3WithVersion = [
             "androidx.compose.material3:material3-android:$androidXMaterial3Version",
+            "androidx.compose.material3:material3:$androidXMaterial3Version",
     ]
 
     anndroidXComposePlatform = "androidx.compose:compose-bom:$androidXComposeBomVersion"
 
-    anndroidXAppCompat = [
-            "androidx.appcompat:appcompat:$androidXAppCompatVersion",
-    ]
-
     anndroidXNavigation = [
             "androidx.navigation:navigation-compose:$androidXNavigationComposeVersion",
-    ]
-
-    androidMaterial = [
-            "com.google.android.material:material:$androidMaterialVersion",
     ]
 
     coil = [
@@ -59,6 +52,14 @@ ext {
 
     kotlinX = [
             "org.jetbrains.kotlinx:kotlinx-collections-immutable:$kotlinCollectionImmutableVersion",
+    ]
+
+    anndroidXAppCompat = [
+            "androidx.appcompat:appcompat:$androidXAppCompatVersion",
+    ]
+
+    androidMaterial = [
+            "com.google.android.material:material:$androidMaterialVersion",
     ]
 
     dagger = [
