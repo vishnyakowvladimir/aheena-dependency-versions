@@ -90,7 +90,7 @@ ext {
             implementation anndroidXComposeUiWithVersions
             implementation anndroidXComposeFoundation
             implementation anndroidXComposeMaterial3WithVersion
-            implementation anndroidXComposeNavigation
+//            implementation anndroidXComposeNavigation
         }
     }
 }

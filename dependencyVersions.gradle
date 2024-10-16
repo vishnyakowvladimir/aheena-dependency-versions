@@ -14,7 +14,7 @@ ext {
     androidXLifecycleRuntimeKtxVersion = "2.8.6"
     androidXActivityComposeVersion = "1.9.2"
     androidXAppCompatVersion = "1.7.0"
-    androidXNavigationComposeVersion = "2.8.2"
+//    androidXNavigationComposeVersion = "2.8.2"
     androidXComposeBomVersion = "2024.09.03"
     androidXComposeAndroidVersion = "1.7.3"
     anndroidXComposeNavigationVersion = "1.7.0-beta01"

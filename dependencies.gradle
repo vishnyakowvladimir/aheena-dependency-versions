@@ -39,18 +39,18 @@ ext {
             "androidx.compose.material3:material3-android:$androidXMaterial3Version",
     ]
 
-    anndroidXComposeNavigation = [
-            "androidx.compose.material:material-navigation:$anndroidXComposeNavigationVersion",
-    ]
+//    anndroidXComposeNavigation = [
+//            "androidx.compose.material:material-navigation:$anndroidXComposeNavigationVersion",
+//    ]
+
+    //    anndroidXNavigation = [
+//            "androidx.navigation:navigation-compose:$androidXNavigationComposeVersion",
+//    ]
 
     anndroidXComposePlatform = "androidx.compose:compose-bom:$androidXComposeBomVersion"
 
     anndroidXAppCompat = [
             "androidx.appcompat:appcompat:$androidXAppCompatVersion",
-    ]
-
-    anndroidXNavigation = [
-            "androidx.navigation:navigation-compose:$androidXNavigationComposeVersion",
     ]
 
     androidMaterial = [
