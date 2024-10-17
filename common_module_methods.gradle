@@ -5,6 +5,7 @@ ext {
             apply plugin: 'com.android.library'
             apply plugin: 'org.jetbrains.kotlin.android'
             apply plugin: 'kotlin-kapt'
+            apply plugin: 'org.jetbrains.kotlin.plugin.serialization'
 
             android {
                 namespace = nameSpace
@@ -46,6 +47,7 @@ ext {
 
         module.dependencies {
             implementation multidex
+            implementation(kotlinX)
         }
     }
 
@@ -58,8 +60,6 @@ ext {
 
     applyCompose = { module, kotlinCompile ->
         module.configure(module) {
-            apply plugin: 'org.jetbrains.kotlin.plugin.serialization'
-
             android {
                 buildFeatures {
                     compose true
@@ -94,7 +94,6 @@ ext {
             implementation(platform(androidXComposePlatform))
             implementation(androidXNavigation)
             implementation(coil)
-            implementation(kotlinX)
         }
     }
 }
