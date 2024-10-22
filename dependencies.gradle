@@ -11,6 +11,14 @@ ext {
             "androidx.activity:activity-compose:$androidXActivityComposeVersion",
     ]
 
+    androidXSecurity = [
+            "androidx.security:security-crypto:$androidXSecurityVersion",
+    ]
+
+    androidXPreference = [
+            "androidx.preference:preference-ktx:$androidXPreferenceVersion",
+    ]
+
     androidXComposeUi = [
             "androidx.compose.ui:ui",
             "androidx.compose.ui:ui-graphics",
