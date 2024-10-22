@@ -83,6 +83,10 @@ ext {
             "com.google.android.material:material:$androidMaterialVersion",
     ]
 
+    gson = [
+            "com.google.code.gson:gson:$gsonVersion",
+    ]
+
     dagger = [
             "com.google.dagger:dagger:$daggerVersion",
             "com.google.dagger:dagger-android:$daggerVersion",

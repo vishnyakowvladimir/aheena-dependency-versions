@@ -48,6 +48,7 @@ ext {
         module.dependencies {
             implementation multidex
             implementation kotlinX
+            implementation gson
         }
     }
 

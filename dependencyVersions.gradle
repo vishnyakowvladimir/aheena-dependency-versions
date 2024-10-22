@@ -26,6 +26,7 @@ ext {
     coilVersion = "2.7.0"
     kotlinCollectionImmutableVersion = "0.3.7"
     kotlinXSerializationJsonVersion = "1.6.3"
+    gsonVersion = "2.10.1"
 
     daggerVersion = "2.47"
     multidexVerstion = "1.0.3"
