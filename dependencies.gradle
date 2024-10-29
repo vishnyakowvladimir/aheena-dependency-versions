@@ -79,6 +79,10 @@ ext {
             "androidx.appcompat:appcompat:$androidXAppCompatVersion",
     ]
 
+    androidXBiometric = [
+            "androidx.biometric:biometric:$biometricVersion",
+    ]
+
     androidMaterial = [
             "com.google.android.material:material:$androidMaterialVersion",
     ]
