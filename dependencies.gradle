@@ -128,4 +128,12 @@ ext {
             "com.squareup.retrofit2:converter-gson:$retrofitVersion",
             "com.squareup.retrofit2:converter-scalars:$retrofitVersion",
     ]
+
+    chuckerDebug = [
+            "com.github.chuckerteam.chucker:library:$chuckerVersion",
+    ]
+
+    chuckerRelease = [
+            "com.github.chuckerteam.chucker:library-no-op:$chuckerVersion",
+    ]
 }

@@ -36,4 +36,5 @@ ext {
     retrofitVersion = "2.11.0"
     coroutinesVersion = "1.8.1"
     biometricVersion = "1.1.0"
+    chuckerVersion = "4.0.0"
 }
