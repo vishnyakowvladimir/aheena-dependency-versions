@@ -136,4 +136,8 @@ ext {
     chuckerRelease = [
             "com.github.chuckerteam.chucker:library-no-op:$chuckerVersion",
     ]
+
+    leakCanary = [
+            "com.squareup.leakcanary:leakcanary-android:$leakCanaryVersion",
+    ]
 }

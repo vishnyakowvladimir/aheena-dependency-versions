@@ -36,4 +36,5 @@ ext {
     coroutinesVersion = "1.8.1"
     biometricVersion = "1.1.0"
     chuckerVersion = "4.0.0"
+    leakCanaryVersion = "3.0-alpha-1"
 }
