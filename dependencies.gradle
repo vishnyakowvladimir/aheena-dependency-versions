@@ -140,4 +140,10 @@ ext {
     leakCanary = [
             "com.squareup.leakcanary:leakcanary-android:$leakCanaryVersion",
     ]
+
+    firebaseBom = "com.google.firebase:firebase-bom:$firebaseVersion"
+
+    firebase = [
+            "com.google.firebase:firebase-analytics",
+    ]
 }
