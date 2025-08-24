@@ -61,13 +61,11 @@ ext {
 
     applyCompose = { module, kotlinCompile ->
         module.configure(module) {
+            apply plugin: 'org.jetbrains.kotlin.plugin.compose'
+
             android {
                 buildFeatures {
                     compose true
-                }
-
-                composeOptions {
-                    kotlinCompilerExtensionVersion = kotlinCompilerExtensionVersionExt
                 }
             }
         }
