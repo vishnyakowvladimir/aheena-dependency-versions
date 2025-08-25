@@ -141,9 +141,13 @@ ext {
             "com.squareup.leakcanary:leakcanary-android:$leakCanaryVersion",
     ]
 
-    firebaseBom = "com.google.firebase:firebase-bom:$firebaseVersion"
+    firebaseBom = "com.google.firebase:firebase-bom:$firebaseBomVersion"
 
     firebase = [
             "com.google.firebase:firebase-analytics",
+    ]
+
+    firebaseMessaging = [
+            "com.google.firebase:firebase-messaging-ktx:$firebaseMessagingVersion",
     ]
 }
