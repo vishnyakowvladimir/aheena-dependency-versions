@@ -145,9 +145,6 @@ ext {
 
     firebase = [
             "com.google.firebase:firebase-analytics",
-    ]
-
-    firebaseMessaging = [
-            "com.google.firebase:firebase-messaging-ktx:$firebaseMessagingVersion",
+            "com.google.firebase:firebase-messaging",
     ]
 }

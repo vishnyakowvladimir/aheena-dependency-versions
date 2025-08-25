@@ -39,5 +39,4 @@ ext {
 
     googleServicesPluginVersion = "4.4.3"
     firebaseBomVersion = "34.1.0"
-    firebaseMessagingVersion = "24.1.2"
 }
